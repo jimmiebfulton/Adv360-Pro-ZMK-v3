@@ -125,9 +125,9 @@
             bindings = <
 &kp EQUAL  &kp N1      &kp N2      &kp N3       &kp N4      &kp N5      &tog COLEMAK                                                                            &mo UTILS  &kp N6  &kp N7       &kp N8    &kp N9    &kp N0  &kp MINUS
 &kp TAB    &kp Q       &kp W       &kp E        &kp R       &kp T       &none                                                                                   &none    &kp Y   &kp U        &kp I     &kp O     &kp P   &kp BSLH
-&kp ESC    &hm LCTL A  &hm LALT S  &hm LSHFT D  &hm LGUI F  &rlt SYM G  &none          &kp LGUI     &kp LALT                           &kp RCTRL &kp RGUI       &none    &rlt SYM H    &hm RGUI J      &hm RSHFT K     &hm RALT L  &hm RCTRL SEMI    &kp SQT
+&kp ESC    &hm LCTL A  &hm LALT S  &hm LSHFT D  &hm LGUI F  &kp G       &none          &kp LGUI     &kp LALT                           &kp RCTRL &kp RGUI       &none    &kp H         &hm RGUI J      &hm RSHFT K     &hm RALT L  &hm RCTRL SEMI    &kp SQT
 &kp LSHFT  &kp Z       &kp X       &kp C        &kp V       &kp B                                   &rlt NUM HOME                      &rlt FUN PG_UP                    &kp N &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-&none    &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT                    &kp BSPC  &rlt NAV DEL &hm HYPER END    &hm HYPER PG_DN  &kp ENTER &kp SPACE                             &kp UP &kp DOWN  &kp LBKT  &kp RBKT      &none
+&none    &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT                    &rlt SYM BSPC  &rlt NAV DEL &hm HYPER END    &hm HYPER PG_DN  &kp ENTER &rlt SYM SPACE                             &kp UP &kp DOWN  &kp LBKT  &kp RBKT      &none
             >;
         };
 
@@ -135,7 +135,7 @@
             bindings = <
 &trans &trans     &trans     &trans      &trans     &trans     &trans                                             &trans  &trans  &trans     &trans    &trans    &trans  &trans
 &trans &kp Q      &kp W      &kp F       &kp P      &kp G      &trans                                             &trans  &kp J   &kp L      &kp U     &kp Y     &kp SEMI   &trans
-&trans &hm LCTL A &hm LALT R &hm LSHFT S &hm LGUI T &rlt SYM D &trans        &trans &trans   &trans &trans        &trans  &rlt SYM H   &hm RGUI N      &hm RSHFT E     &hm RALT I  &hm RCTRL O    &trans
+&trans &hm LCTL A &hm LALT R &hm LSHFT S &hm LGUI T &kp D      &trans        &trans &trans   &trans &trans        &trans  &kp H        &hm RGUI N      &hm RSHFT E     &hm RALT I  &hm RCTRL O    &trans
 &trans &kp Z      &kp X      &kp C       &kp V      &kp B                              &trans   &trans                       &kp K   &kp M  &trans   &trans  &trans  &trans
 &trans &kp GRAVE  &kp CAPS   &kp LEFT    &kp RIGHT                    &trans &trans &trans   &trans &trans &trans                 &trans   &trans  &trans  &trans      &trans
             >;
@@ -159,7 +159,7 @@
 &trans  &trans  &trans  &trans &trans  &trans  &trans                                                      &trans &trans &trans &trans &trans &trans &trans
 &trans  &kp A   &kp S   &kp D  &kp F   &kp G   &trans          &trans   &trans      &trans  &trans         &trans &trans &trans &trans &trans &trans &trans
 &trans  &trans  &trans  &trans &trans  &trans                           &kp HOME    &trans                        &trans &trans &trans &trans &trans &trans
-&trans  &trans  &trans  &trans &trans                  &trans  &kp DEL  &kp END     &trans  &trans  &trans               &trans &trans &trans &trans &trans
+&trans  &trans  &trans  &trans &trans                  &kp BSPC  &kp DEL  &kp END     &trans  &trans  &kp SPACE               &trans &trans &trans &trans &trans
             >;
         };
 
@@ -186,8 +186,8 @@
         layer_NAVIGATION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans            &none                                                  &none &trans     &trans           &trans     &trans           &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none   &kp PG_UP  &kp LG(LBKT)     &kp UP     &kp LG(RBKT)     &trans   &trans
-&trans  &kp LCTL  &kp LALT  &kp LSHFT  &kp LGUI  &trans             &none  &trans  &trans         &trans  &trans   &none   &kp PG_DN  &kp LEFT         &kp DOWN   &kp RIGHT        &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none   &kp PG_UP  &kp LG(LBKT)     &kp PG_DN  &kp LG(RBKT)     &trans   &trans
+&trans  &kp LCTL  &kp LALT  &kp LSHFT  &kp LGUI  &trans             &none  &trans  &trans         &trans  &trans   &none   &kp LEFT   &kp DOWN         &kp UP     &kp RIGHT        &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                   &trans     &kp LG(LS(LBKT)) &trans &kp LG(LS(RBKT)) &trans   &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans              &trans           &trans     &trans           &trans   &trans
             >;
