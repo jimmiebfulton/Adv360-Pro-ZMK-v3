@@ -224,9 +224,9 @@
         layer_NAVIGATION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans            &none                                                  &none &trans     &trans           &trans     &trans           &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none   &kp PG_UP  &kp LG(LBKT)     &kp PG_DN  &kp LG(RBKT)     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none   &kp LG(LBKT) &kp LG(LS(LBKT)) &kp LG(LS(RBKT)) &kp LG(RBKT) &trans   &trans
 &trans  &kp LCTL  &kp LALT  &kp LSHFT  &kp LGUI  &trans             &none  &trans  &trans         &trans  &trans   &none   &kp LEFT   &kp DOWN         &kp UP     &kp RIGHT        &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                   &trans     &kp LG(LS(LBKT)) &trans &kp LG(LS(RBKT)) &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                   &kp HOME   &kp PG_DN        &kp PG_UP &kp END          &trans   &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans              &trans           &trans     &trans           &trans   &trans
             >;
         };
