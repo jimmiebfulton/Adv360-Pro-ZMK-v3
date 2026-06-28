@@ -134,16 +134,18 @@
             key-positions = <46 59>;
             bindings = <&cwm>;
         };
-        combo_media_layer_left {
+        // UTILS entered via a lower corner + its Delete/Enter thumb key
+        // (corner 60/75 are &none on base, so these are deliberate chords).
+        combo_utils_layer_left {
             timeout-ms = <COMBO_TIMEOUT>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            key-positions = <60 35>;
+            key-positions = <60 66>;
             bindings = <&mo UTILS>;
         };
-        combo_media_layer_right {
+        combo_utils_layer_right {
             timeout-ms = <COMBO_TIMEOUT>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            key-positions = <75 38>;
+            key-positions = <75 69>;
             bindings = <&mo UTILS>;
         };
     };
