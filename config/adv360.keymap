@@ -61,6 +61,14 @@
 #define KEYS_R  7  8  9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75
 #define THUMBS 35 36 37 38 52 53 65 66 67 68 69 70
 
+// Named key positions used by combos (see the physical layout map at top).
+#define POS_LSHIFT   46   // bottom-row left Shift
+#define POS_RSHIFT   59   // bottom-row right Shift
+#define POS_LCORNER  60   // lower-left corner key
+#define POS_RCORNER  75   // lower-right corner key
+#define POS_LDELETE  66   // left thumb Delete
+#define POS_RENTER   69   // right thumb Enter
+
 / {
   behaviors {
     #include "version.dtsi"
@@ -131,21 +139,21 @@
         combo_caps_word {
             timeout-ms = <COMBO_TIMEOUT>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            key-positions = <46 59>;
+            key-positions = <POS_LSHIFT POS_RSHIFT>;
             bindings = <&cwm>;
         };
         // UTILS entered via a lower corner + its Delete/Enter thumb key
-        // (corner 60/75 are &none on base, so these are deliberate chords).
+        // (the corners are &none on base, so these are deliberate chords).
         combo_utils_layer_left {
             timeout-ms = <COMBO_TIMEOUT>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            key-positions = <60 66>;
+            key-positions = <POS_LCORNER POS_LDELETE>;
             bindings = <&mo UTILS>;
         };
         combo_utils_layer_right {
             timeout-ms = <COMBO_TIMEOUT>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            key-positions = <75 69>;
+            key-positions = <POS_RCORNER POS_RENTER>;
             bindings = <&mo UTILS>;
         };
     };
