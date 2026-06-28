@@ -124,14 +124,6 @@
         global-quick-tap;
         bindings = <&mo>, <&kp>;
     };
-
-    // Deep power-off. hold-time-ms guards against accidental triggering:
-    // the key must be held that long before it powers the keyboard down.
-    soft_off: soft_off {
-        compatible = "zmk,behavior-soft-off";
-        #binding-cells = <0>;
-        hold-time-ms = <1000>;
-    };
   };
 
     combos {
@@ -268,4 +260,10 @@
         };
 
     };
+};
+
+// Augment ZMK's built-in soft-off behavior with a hold guard so a stray tap
+// can't power the keyboard down; the key must be held ~1s to trigger.
+&soft_off {
+    hold-time-ms = <1000>;
 };
