@@ -47,8 +47,7 @@ CONFIG_ZMK_BACKLIGHT_BRT_START=20
 CONFIG_ZMK_BACKLIGHT_AUTO_OFF_IDLE=y
 
 #Power management
-# Idle after 2 min: turns off RGB + backlight (AUTO_OFF_IDLE above).
-CONFIG_ZMK_IDLE_TIMEOUT=120000
+# Idle timeout left at the 30s default; turns off RGB + backlight on idle.
 # Enable the &soft_off behavior (deep power-off; wake via any key / hardware switch).
 CONFIG_ZMK_PM_SOFT_OFF=y
 
