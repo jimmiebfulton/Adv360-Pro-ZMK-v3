@@ -211,11 +211,11 @@
 
         layer_NAVIGATION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans            &none                                                  &none &trans     &trans           &trans     &trans           &trans   &trans
-&trans  &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans             &none                                                   &none   &kp LG(LBKT) &kp LG(LS(LBKT)) &kp LG(LS(RBKT)) &kp LG(RBKT) &trans   &trans
-&trans  &kp LCTL  &kp LALT  &kp LSHFT  &kp LGUI  &trans             &none  &trans  &trans         &trans  &trans   &none   &kp LEFT   &kp DOWN         &kp UP     &kp RIGHT        &trans   &trans
-&trans  &trans  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &trans                            &trans                  &trans                   &kp HOME   &kp PG_DN        &kp PG_UP &kp END          &trans   &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans              &trans           &trans     &trans           &trans   &trans
+&none  &none     &none        &none      &none        &none &none                                                  &none    &none        &none            &none            &none        &none &none
+&none  &none     &kp C_PREV   &kp C_PP   &kp C_NEXT   &none &none                                                  &none    &kp LG(LBKT) &kp LG(LS(LBKT)) &kp LG(LS(RBKT)) &kp LG(RBKT) &none &none
+&none  &kp LCTL  &kp LALT     &kp LSHFT  &kp LGUI     &none &none         &trans  &trans   &trans  &trans          &none    &kp LEFT     &kp DOWN         &kp UP           &kp RIGHT    &none &none
+&none  &none     &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &none                       &trans   &trans                  &kp HOME &kp PG_DN    &kp PG_UP        &kp END          &none        &none
+&none  &none     &none        &none      &none                    &trans  &trans  &trans   &trans  &trans  &trans           &none        &none            &none            &none        &none
             >;
         };
 
@@ -231,9 +231,9 @@
 
         layer_UTILS {
             bindings = <
-&none &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4 &bt BT_CLR                                            &tog COLEMAK            &tog WINDOWS      &tog GAMING   &rgb_ug RGB_TOG  &none         &none  &soft_off
+&none &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4 &bt BT_CLR                                            &tog COLEMAK            &tog WINDOWS      &tog GAMING   &rgb_ug RGB_TOG  &none         &none  &none
 &none &none         &none         &none         &none          &none        &bootloader                                           &bootloader             &none             &bl BL_DEC    &bl BL_TOG       &bl BL_INC    &none  &none
-&studio_unlock &kp SCRSHT_CB &kp SCRSHT_FI &kp SLTSHT_CB &kp SLTSHT_FI &none         &rgb_ug RGB_MEFS_CMD 5  &none &none   &none  &none    &rgb_ug RGB_MEFS_CMD 5  &none             &kp C_PREV    &kp C_PP         &kp C_NEXT    &none  &none
+&none &kp SCRSHT_CB &kp SCRSHT_FI &kp SLTSHT_CB &kp SLTSHT_FI &none         &rgb_ug RGB_MEFS_CMD 5  &none &none   &none  &none    &rgb_ug RGB_MEFS_CMD 5  &none             &kp C_PREV    &kp C_PP         &kp C_NEXT    &none  &none
 &none &none         &none         &none         &none          &none                                      &none   &none                                   &none             &kp C_VOL_DN  &kp C_MUTE       &kp C_VOL_UP  &none  &none
 &none &none         &none         &none         &none                                 &none &kp LOCK_SCR  &none   &none  &kp SLEEP_DIS  &none                               &none         &none            &none         &none  &none
             >;
