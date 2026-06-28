@@ -36,7 +36,6 @@
 #define NAV       5
 #define SYM       6
 #define UTILS     7
-#define MACROS    8
 
 #define HYPER LS(LC(LA(LGUI)))
 
@@ -62,7 +61,6 @@
 
 / {
   behaviors {
-    #include "macros.dtsi"
     #include "version.dtsi"
 
     // Non-positional hold-tap, kept for the HYPER thumb keys.
@@ -142,16 +140,6 @@
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <75 38>;
             bindings = <&mo UTILS>;
-        };
-        combo_macro_layer_left {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <60 66>;
-            bindings = <&mo MACROS>;
-        };
-        combo_macro_layer_right {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <75 69>;
-            bindings = <&mo MACROS>;
         };
     };
 
@@ -243,16 +231,6 @@
 &studio_unlock &kp SCRSHT_CB &kp SCRSHT_FI &kp SLTSHT_CB &kp SLTSHT_FI &none         &rgb_ug RGB_MEFS_CMD 5  &none &none   &none  &none    &rgb_ug RGB_MEFS_CMD 5  &none             &kp C_PREV    &kp C_PP         &kp C_NEXT    &none  &none
 &none &none         &none         &none         &none          &none                                      &none   &none                                   &none             &kp C_VOL_DN  &kp C_MUTE       &kp C_VOL_UP  &none  &none
 &none &none         &none         &none         &none                                 &none &kp LOCK_SCR  &none   &none  &kp SLEEP_DIS  &none                               &none         &none            &none         &none  &none
-            >;
-        };
-
-        layer_MACROS {
-            bindings = <
-&none &none &none &none &none &none &none                                          &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none                                          &none &none &none &none &none &none &none
-&none &none &none &m_r_tests &m_r_test &none &none        &none &none   &none  &none        &none &none &none &m_r_debug &none &none &none
-&none &none &none &none &none &none                    &none   &none                     &none &none &none &none &none &none
-&none &none &none &none &none             &none  &none &none   &none  &none  &none              &none &none &none &none &none
             >;
         };
 
